@@ -37,5 +37,5 @@ exports.minjs = minjs;
 exports.renjs = renjs;
 exports.rencss = rencss;
 
-gulp.task('compile', gulp.series(clean, renjs,rencss, minjs));
+gulp.task('compile', gulp.series(clean, renjs, rencss, minjs));
 gulp.task('build', gulp.series('compile'));
