@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desliza.js</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/desliza.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="highlight">
+        <div class="container">
+            <div class="intro">
+                <h1 class="text-center">Desliza.js</h1>
+                <p class="text-center">Lightweight vanilla javascript carousel. <br> Free for personal and commercial use.</p>
+            </div>
+            <div class="buttons">
+                <a class="btn btn-download" role="button" href="https://github.com/rafavth/Desliza/archive/master.zip">Download</a>
+                <a class="btn btn-github" role="button" href="https://github.com/rafavth/Desliza">Github</a>
+            </div>
+        </div>
+    </header>
+        
+    <div class="desliza">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 options">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="blocks">Install</h3>
+                        <script type="text/plain" class="language-html">
+<div class="desliza">
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+</div> 
+                        </script>
+                        <script type="text/plain" class="language-html">
+<script src="desliza.min.js">&lt;/script&gt;
+<script> 
+    new Desliza();
+&lt;/script&gt;
+                        </script>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="blocks">Options</h3>
+                        <pre class="language-javascript"><code>
+new Desliza({
+    selector: '.slider',
+    duration: 180,
+    easing: 'ease-out',
+    items: 1,
+    startIndex: 0,
+    center : false,
+    threshold: 10,
+    draggable : true,
+    dots : false,
+    buttons : true,
+    onInit: () => {},
+    onChange: () => {},
+    onAfterChange: () => {}
+});
+                        </code></pre>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="blocks">API</h3>
+                        <pre><code class="language-javascript">
+<b>next()</b>
+<span>Go to the next item.</span>
+                        </code></pre>
+
+                        <pre><code class="language-javascript">
+prev() 
+<span>Go to the previous item.</span>
+                        </code></pre>
+
+                        <pre><code class="language-javascript">
+moveTo(index) 
+Go to a specific item.
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buttons">
+                    <a class="btn btn-codepen" role="button" href="https://codepen.io/rafavth/pen/ZgybVz">Try on Codepen</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright">Built by Rafael Vallejo</p>
+            </div>
+        </div>
+
+    </section> 
+
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/desliza.min.js"></script>
+
+    <script>
+        new Desliza({
+            items: 2,
+            startIndex: 1,
+            center: true,
+            dots:true,
+            buttons:true
+        });
+    </script>
+
+</body>
+</html>

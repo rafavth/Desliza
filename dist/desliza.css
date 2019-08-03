@@ -1,0 +1,66 @@
+.dslz-button {
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.7);
+    border: none;
+    color: #30313e;
+    cursor: pointer;
+    outline: none;
+    top: 50%;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    outline: none;
+    transform: translateY(-50%);
+}
+
+.dslz-button.dslz-next {
+    right: 15px;
+}
+
+.dslz-button.dslz-prev {
+    left: 15px;
+}
+
+.dslz-button.disabled {
+    opacity: 0.25;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.dslz-button .dslz-button-icon {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+.dslz-button.dslz-next .dslz-button-icon {
+    transform: rotate(180deg);
+}
+
+.dslz-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.dslz-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #30313e;
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.dslz-dots .dot.selected {
+    opacity: 1;
+}

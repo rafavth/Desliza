@@ -1,0 +1,33 @@
+{
+  "name": "desliza",
+  "version": "1.0.0",
+  "description": "Lightweight vanilla javascript carousel. Free for personal and commercial use.",
+  "main": "dist/desliza.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafavth/Desliza.git"
+  },
+  "author": "Rafael Vallejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafavth/Desliza/issues"
+  },
+  "homepage": "https://github.com/rafavth/Desliza#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-install": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

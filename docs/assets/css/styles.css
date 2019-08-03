@@ -1,0 +1,147 @@
+body {
+    font-family: 'Racing Sans One', cursive;
+}
+
+p {
+    font-family: 'open sans';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn-download {
+    background: #FFDC50;
+}
+
+.highlight {
+    color: #30313e;
+    background-color: #fff;
+    padding: 50px 0;
+    padding-bottom: 70px;
+}
+
+.highlight p {
+    color: #7f8396;
+    letter-spacing: 0.2px;
+}
+
+.highlight h1 {
+    color: #3E4247;
+    line-height: 1.1;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit;
+}
+
+.highlight .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.buttons .btn {
+    padding: 16px 35px;
+    margin: 0 6px;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    outline: none;
+    color:#30313e;
+    border: 3px solid #30313e;
+    border-radius: 0;
+    letter-spacing: 1px;
+}
+
+.highlight .buttons .btn:hover {
+    opacity: 1;
+}
+
+.highlight .buttons .btn:active {
+    transform: translateY(1px);
+}
+
+.highlight .buttons .btn-primary {
+    background-color: #ffe169;
+    color: #30313e;
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 0;
+    padding: 40px 0;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.dslz-inner>div {
+    transition: 0.2s;
+    margin: 20px 10px;
+    background: #fff;
+    counter-increment: carousel-cell;
+    border: 5px solid #30313e;
+}
+
+.dslz-inner>div:before {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    content: counter(carousel-cell);
+    text-align: center;
+    line-height: 220px;
+    font-size: 70px;
+    color: #30313e;
+}
+
+.dslz-inner>div:not(.active) {
+    opacity: 0.5;
+}
+
+.dslz-container {
+    background: #ffe169;
+}
+
+.options {
+    margin-top: 100px;
+}
+
+.blocks {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.btn-codepen {
+    margin-top: 40px;
+    text-align: center;
+ 
+}
+
+.codepen .btn {
+    color: #30313e;
+}
+
+span {
+    color: #ff9328;
+}
