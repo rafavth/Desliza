@@ -110,6 +110,7 @@ class Desliza {
 
         this.element.style.position = 'relative';
         this.container.style.overflow = 'hidden';
+        this.container.style.touchAction = 'pan-y';
         if (this.config.draggable) this.container.style.cursor = 'grab';
 
         this.innerElementsBuilded = [].slice.call(this.viewport.children);
@@ -178,7 +179,6 @@ class Desliza {
     }
 
     touchstartHandler(e){
-        e.preventDefault();
         if(['INPUT', 'TEXTAREA', 'SELECT','OPTION'].indexOf(e.target.nodeName) !== -1) return false;
         this.pointerDown = true;
         this.start = e.touches[0].pageX;
@@ -186,6 +186,7 @@ class Desliza {
     }
 
     touchmoveHandler(e){
+        e.stopPropagation();
         if (this.pointerDown && !this.moving) {
             this.first = false;
             this.end = e.touches[0].pageX;
@@ -196,8 +197,7 @@ class Desliza {
                 const total = -(number) + ((currentMovement/this.innerElementsBuilded.length)*this.config.items);
                 this.viewport.style.transition = `all 0ms`;
                 this.viewport.style.transform = `translateX(${total.toFixed(2)}%)`;
-            }
-            
+            } 
         }
     }
     
